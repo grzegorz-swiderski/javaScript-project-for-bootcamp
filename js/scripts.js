@@ -6,7 +6,7 @@ console.log('Number A= ' + numberA);
 var numberB = prompt('Number B');
 console.log('Number B= ' + numberB);
 	
-var value = (numberA * numberA)+(2 * numberA * numberB)-(numberB * numberB);
+var value = (numberA * numberA) + (2 * numberA * numberB) - (numberB * numberB);
 alert('Wynik działania= ' + value);
 console.log('Wynik działania= ' + value);
 	
