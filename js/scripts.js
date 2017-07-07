@@ -1,9 +1,9 @@
 ﻿// scripts.js
 
 var numberA = prompt('Number A');
-	console.log('Number A= ' + numberA);
 	numberH = prompt('Number H');
-	console.log('Number H= ' + numberH);
+console.log('Number A= ' + numberA);
+console.log('Number H= ' + numberH);
 
 
 
