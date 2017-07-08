@@ -1,8 +1,9 @@
 ﻿// scripts.js
 
 var numberA = prompt('Number A');
-	numberH = prompt('Number H');
 console.log('Number A= ' + numberA);
+	
+var	numberH = prompt('Number H');
 console.log('Number H= ' + numberH);
 
 
@@ -12,9 +13,8 @@ function getTriangleArea(numberA, numberH) {
 	alert('Nieprawdziwe dane');
 	return ('Nieprawdziwe dane');}
 	
-	else if ((numberA > 0) || (numberH > 0)){
 	alert('Równa się= ' + (numberA * numberH / 2));
-	return numberA * numberH / 2;}
+	return numberA * numberH / 2;
 }
 
 console.log( getTriangleArea(numberA,numberH) )
