@@ -25,10 +25,7 @@ else {
 	alert('Ani dodatni, ani ujemny:)');
 }*/
 
-<<<<<<< HEAD
-=======
-var valueName = 'Wynik' + ((value > 0) ?  ' dodatni.' : ' ujemny.');
->>>>>>> 034f9e39e20e6b1eda568c838a27202a626a128c
+
 
 if (value == 0) {
 	console.log('Ani dodatni, ani ujemny:)');
