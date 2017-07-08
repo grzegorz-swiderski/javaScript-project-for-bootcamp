@@ -1,14 +1,9 @@
 ﻿// scripts.js
 
 var numberA = prompt('Number A');
-<<<<<<< HEAD
 console.log('Number A= ' + numberA);
 	
 var	numberH = prompt('Number H');
-=======
-    numberH = prompt('Number H');
-console.log('Number A= ' + numberA);
->>>>>>> c2a5a10224f050bfa0bd23003a51699d2ba96cbb
 console.log('Number H= ' + numberH);
 
 
