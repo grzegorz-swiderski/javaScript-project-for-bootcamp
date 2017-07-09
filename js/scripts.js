@@ -14,9 +14,9 @@ console.log(allNames);
 
 var newName =prompt('Nowe imię w tabeli to: ');
 
-
 if (allNames.indexOf(newName) === -1){
-	var x = allNames.push(newName);	}
+	allNames.push(newName);	
+}
 	
 alert(allNames);
 console.log(allNames);
