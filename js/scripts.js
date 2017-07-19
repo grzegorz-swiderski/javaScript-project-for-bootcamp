@@ -68,13 +68,6 @@ function getComputerPick() {
     var possiblePicks = ['rock', 'paper', 'scissors'];
     return possiblePicks[Math.floor(Math.random()*3)];
 }
-	
-function playerPick(playerPick) {
-    var computerPick = getComputerPick();
-
-    playerPickElem.innerHTML = playerPick;
-    computerPickElem.innerHTML = computerPick;
-}
 
 function checkRoundWinner(playerPick, computerPick) {
   playerResultElem.innerHTML = computerResultElem.innerHTML = '';
