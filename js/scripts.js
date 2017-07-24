@@ -4,8 +4,6 @@ function Button(text) {
 	this.text = text || 'Hello';
 }
 
-console.log(Button);
-
 Button.prototype = {
 	create: function() {
 		var self = this;
