@@ -2,27 +2,18 @@
 $(document).ready(function(){
 
 	var span = $('span');
-	var ignored = ['#sp1', '#sp2', '#sp4'];
-	var nn = $(ignored);
-
-
+	var ignored = ['sp1', 'sp2', 'sp4'];
 	    
 	span.each(function(index, element) {
-		if(index % 2 == 0){
+		
+		var elementId = $(element).attr('id');
+		var ignoredIndexOf = ignored.indexOf(elementId);
+		
+		if((index % 2 == 0) && (ignoredIndexOf === -1)) {
 			$(element).css('color', 'red');
+			
 		}
-		nn.each(function(index, element){
-			if(index > -1) {
-				$(element).css('color', 'blue');
-			}
-		});
 	});	
-	
-	    
-	/*ignored.forEach(function(element) {
-    	console.log(element);
-    	$(element).css('color', 'blue')
-	});*/
 
 	var paragraphs = $('p');
 	paragraphs.each(function(index, element) {
