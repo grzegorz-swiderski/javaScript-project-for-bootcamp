@@ -2,9 +2,44 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>strona Klienta</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<title>Podróże małe i duże</title>
 	</head>
 	<body>
-		<script src="js/scripts.js"></script>
+		<div class="jumbotron">
+			<h1>Small or large travel - where do you go?</h1>
+			<a href="#choose"><button>Here we go!</button><a>
+		</div>
+		<div class="searching">
+			<div class="row">
+				<div class="col-12">
+					<h2 id="choose">Choose your destination...</h2>
+				</div>
+			<div class="row">
+				<div class="col-4 col-offset-2">
+					<button id="search">Search</button>
+				</div>
+				<div class="col-3">
+					<input id="country-name" type="text" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h2>Places you can visit:</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-offset-3">
+					<ul id="countries">
+  						<li>No data</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<footer>Copyrights 2017</footer>
+	<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>
+
+
