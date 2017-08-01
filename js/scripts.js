@@ -8,7 +8,7 @@ function Phone(brand, price, color, country) {
 	this.country = country;
 }
 
-Phone.prototype.getWarranyCost = function(){
+Phone.prototype.getWarrantyCost = function(){
     	return this.price * 0.1   
 };
 
@@ -22,4 +22,4 @@ var onePlusOne = new Phone ("OnePlus", 1899, "white", "China");
 
 samsungGalaxyS6.printInfo();
 
-iPhone6S.getWarranyCost();
+iPhone6S.getWarrantyCost();
