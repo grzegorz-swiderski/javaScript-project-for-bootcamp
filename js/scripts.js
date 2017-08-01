@@ -1,7 +1,4 @@
-﻿// scripts.js
-
-
-var url = 'https://restcountries.eu/rest/v1/name/';
+﻿var url = 'https://restcountries.eu/rest/v1/name/';
 var countriesList = $('#countries');
 
 $('#search').click(searchCountries);
@@ -17,16 +14,26 @@ function searchCountries() {
 }
 
 function showCountriesList(resp) {
-  countriesList.empty();
-  resp.forEach(function(item) {
+	
+	countriesList.empty();
+	resp.forEach(function(item) {
    	$('<li id="name">').text(item.name).appendTo(countriesList);
-   	$('<li class="col-6 left">').text('Region: ').appendTo(countriesList);
-	$('<li class="col-5 right">').text(item.subregion).appendTo(countriesList);
-   	$('<li class="col-6 left">').text('Capitol: ').appendTo(countriesList);
-	$('<li class="col-5 right">').text(item.capital).appendTo(countriesList);
-	$('<li class="col-6 left">').text('Area: ').appendTo(countriesList);
-	$('<li class="col-5 right">').text(item.area + 'km^2').appendTo(countriesList);
-	$('<li class="col-6 left">').text('Currencies: ').appendTo(countriesList);
-	$('<li class="col-5 right">').text(item.currencies).appendTo(countriesList);
+   	
+   	$('<li class="col-6 left hd">').text('Region: ').appendTo(countriesList);
+	$('<li class="col-5 right hd">').text(item.subregion).appendTo(countriesList);
+   	$('<li class="col-6 left hd">').text('Capitol: ').appendTo(countriesList);
+	$('<li class="col-5 right hd">').text(item.capital).appendTo(countriesList);
+	$('<li class="col-6 left hd">').text('Area: ').appendTo(countriesList);
+	$('<li class="col-5 right hd">').text(item.area + 'km^2').appendTo(countriesList);
+	$('<li class="col-6 left hd">').text('Currencies: ').appendTo(countriesList);
+	$('<li class="col-5 right hd">').text(item.currencies).appendTo(countriesList);
 	});
+	
+	$('.hd').hide();
+	
+	var but = $('#name');
+	but.click(function(){
+    	$('.hd').slideToggle('slow');
+    });
+	
 }
